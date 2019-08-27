@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dMf-wh-djy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dMf-wh-djy">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Pc-aH-eaW" userLabel="DIY Scroll View">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Pc-aH-eaW" userLabel="DIY Scroll View" customClass="DIYScrollView" customModule="CustomScrollVIew" customModuleProvider="target">
                                 <rect key="frame" x="37.666666666666657" y="112.33333333333331" width="300" height="587.33333333333348"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Im8-MS-nKt">
@@ -97,11 +97,15 @@
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.036861431617625812" green="0.20215588589247005" blue="0.26805719339622641" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="Im8-MS-nKt" firstAttribute="leading" secondItem="8Pc-aH-eaW" secondAttribute="leading" constant="20" id="HHY-fN-ANk"/>
                                     <constraint firstAttribute="trailing" secondItem="Im8-MS-nKt" secondAttribute="trailing" constant="20" id="ly1-Ca-4pi"/>
                                     <constraint firstItem="Im8-MS-nKt" firstAttribute="top" secondItem="8Pc-aH-eaW" secondAttribute="top" constant="30" id="qsZ-z8-A00"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DWb-PP-kyx" appends="YES" id="VJk-dQ-6Fs"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -115,6 +119,11 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6u-v6-NaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="DWb-PP-kyx">
+                    <connections>
+                        <action selector="handlePan:" destination="8Pc-aH-eaW" id="yzb-9z-Idz"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="120.8" y="87.706146926536732"/>
         </scene>
