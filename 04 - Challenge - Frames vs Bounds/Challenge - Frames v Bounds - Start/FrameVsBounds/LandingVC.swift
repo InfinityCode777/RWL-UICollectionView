@@ -28,7 +28,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LandingVC: UIViewController {
   @IBOutlet weak var containerView: UIView!
   @IBOutlet weak var innerView: UIView!
   
