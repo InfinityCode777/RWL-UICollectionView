@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		2D302AFA231D796D00E4BEA1 /* LandingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D302AF9231D796D00E4BEA1 /* LandingVC.swift */; };
 		2D302AFC231D7A0400E4BEA1 /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D302AFB231D7A0400E4BEA1 /* Landing.storyboard */; };
+		2D409333231DA9CB0064D4C3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D409332231DA9CB0064D4C3 /* Home.storyboard */; };
+		2D409335231DA9E10064D4C3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D409334231DA9E10064D4C3 /* HomeVC.swift */; };
+		2D40933C231DAA620064D4C3 /* ray-wenderlich.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D409336231DAA620064D4C3 /* ray-wenderlich.jpg */; };
+		2D40933D231DAA620064D4C3 /* toucan_surface.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D409337231DAA620064D4C3 /* toucan_surface.png */; };
+		2D40933E231DAA620064D4C3 /* Reference Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D409338231DAA620064D4C3 /* Reference Image.png */; };
+		2D40933F231DAA620064D4C3 /* bio.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D409339231DAA620064D4C3 /* bio.txt */; };
+		2D409340231DAA620064D4C3 /* toucan_musculature.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D40933A231DAA620064D4C3 /* toucan_musculature.png */; };
+		2D409341231DAA620064D4C3 /* toucan_skeleton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D40933B231DAA620064D4C3 /* toucan_skeleton.png */; };
+		2D409343231DAA950064D4C3 /* Vampire Toucan Description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D409342231DAA950064D4C3 /* Vampire Toucan Description.txt */; };
 		2D482B4D231B623D00469511 /* Vampire Toucan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D482B4C231B623D00469511 /* Vampire Toucan.jpg */; };
-		2D554673231D7C090055F487 /* toucan_skeleton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D55466F231D7C090055F487 /* toucan_skeleton.png */; };
-		2D554674231D7C090055F487 /* toucan_surface.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D554670231D7C090055F487 /* toucan_surface.png */; };
-		2D554675231D7C090055F487 /* Vampire Toucan Description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D554671231D7C090055F487 /* Vampire Toucan Description.txt */; };
-		2D554676231D7C090055F487 /* toucan_musculature.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D554672231D7C090055F487 /* toucan_musculature.png */; };
 		5C2901831F8F6DE700803663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2901821F8F6DE700803663 /* LaunchScreen.storyboard */; };
 		D2A5F2091F4A9144005CD714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F2071F4A9144005CD714 /* Main.storyboard */; };
 		D2A5F20B1F4A9144005CD714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F20A1F4A9144005CD714 /* Assets.xcassets */; };
@@ -25,11 +30,16 @@
 /* Begin PBXFileReference section */
 		2D302AF9231D796D00E4BEA1 /* LandingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingVC.swift; sourceTree = "<group>"; };
 		2D302AFB231D7A0400E4BEA1 /* Landing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
+		2D409332231DA9CB0064D4C3 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		2D409334231DA9E10064D4C3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		2D409336231DAA620064D4C3 /* ray-wenderlich.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ray-wenderlich.jpg"; sourceTree = "<group>"; };
+		2D409337231DAA620064D4C3 /* toucan_surface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toucan_surface.png; sourceTree = "<group>"; };
+		2D409338231DAA620064D4C3 /* Reference Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reference Image.png"; sourceTree = "<group>"; };
+		2D409339231DAA620064D4C3 /* bio.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bio.txt; sourceTree = "<group>"; };
+		2D40933A231DAA620064D4C3 /* toucan_musculature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toucan_musculature.png; sourceTree = "<group>"; };
+		2D40933B231DAA620064D4C3 /* toucan_skeleton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toucan_skeleton.png; sourceTree = "<group>"; };
+		2D409342231DAA950064D4C3 /* Vampire Toucan Description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Vampire Toucan Description.txt"; sourceTree = "<group>"; };
 		2D482B4C231B623D00469511 /* Vampire Toucan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Vampire Toucan.jpg"; sourceTree = "<group>"; };
-		2D55466F231D7C090055F487 /* toucan_skeleton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toucan_skeleton.png; path = ImageScroller/toucan_skeleton.png; sourceTree = SOURCE_ROOT; };
-		2D554670231D7C090055F487 /* toucan_surface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toucan_surface.png; path = ImageScroller/toucan_surface.png; sourceTree = SOURCE_ROOT; };
-		2D554671231D7C090055F487 /* Vampire Toucan Description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Vampire Toucan Description.txt"; path = "ImageScroller/Vampire Toucan Description.txt"; sourceTree = SOURCE_ROOT; };
-		2D554672231D7C090055F487 /* toucan_musculature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toucan_musculature.png; path = ImageScroller/toucan_musculature.png; sourceTree = SOURCE_ROOT; };
 		5C2901821F8F6DE700803663 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2A5F2001F4A9144005CD714 /* ImageScroller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageScroller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A5F2081F4A9144005CD714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,12 +64,15 @@
 		2D55466E231D7BF50055F487 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2D554672231D7C090055F487 /* toucan_musculature.png */,
-				2D55466F231D7C090055F487 /* toucan_skeleton.png */,
-				2D554670231D7C090055F487 /* toucan_surface.png */,
-				E29CE2AD2182A15100233A73 /* zombies.jpg */,
+				2D409342231DAA950064D4C3 /* Vampire Toucan Description.txt */,
+				2D409339231DAA620064D4C3 /* bio.txt */,
+				2D409336231DAA620064D4C3 /* ray-wenderlich.jpg */,
+				2D409338231DAA620064D4C3 /* Reference Image.png */,
+				2D40933A231DAA620064D4C3 /* toucan_musculature.png */,
+				2D40933B231DAA620064D4C3 /* toucan_skeleton.png */,
+				2D409337231DAA620064D4C3 /* toucan_surface.png */,
 				2D482B4C231B623D00469511 /* Vampire Toucan.jpg */,
-				2D554671231D7C090055F487 /* Vampire Toucan Description.txt */,
+				E29CE2AD2182A15100233A73 /* zombies.jpg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -94,6 +107,8 @@
 				D2A5F20F1F4A9144005CD714 /* Info.plist */,
 				2D302AF9231D796D00E4BEA1 /* LandingVC.swift */,
 				2D302AFB231D7A0400E4BEA1 /* Landing.storyboard */,
+				2D409332231DA9CB0064D4C3 /* Home.storyboard */,
+				2D409334231DA9E10064D4C3 /* HomeVC.swift */,
 			);
 			path = ImageScroller;
 			sourceTree = "<group>";
@@ -158,15 +173,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D302AFC231D7A0400E4BEA1 /* Landing.storyboard in Resources */,
+				2D409333231DA9CB0064D4C3 /* Home.storyboard in Resources */,
+				2D409341231DAA620064D4C3 /* toucan_skeleton.png in Resources */,
 				D2A5F20B1F4A9144005CD714 /* Assets.xcassets in Resources */,
-				2D554673231D7C090055F487 /* toucan_skeleton.png in Resources */,
+				2D40933F231DAA620064D4C3 /* bio.txt in Resources */,
 				2D482B4D231B623D00469511 /* Vampire Toucan.jpg in Resources */,
-				2D554676231D7C090055F487 /* toucan_musculature.png in Resources */,
+				2D409343231DAA950064D4C3 /* Vampire Toucan Description.txt in Resources */,
+				2D409340231DAA620064D4C3 /* toucan_musculature.png in Resources */,
 				5C2901831F8F6DE700803663 /* LaunchScreen.storyboard in Resources */,
 				D2A5F2091F4A9144005CD714 /* Main.storyboard in Resources */,
-				2D554675231D7C090055F487 /* Vampire Toucan Description.txt in Resources */,
+				2D40933C231DAA620064D4C3 /* ray-wenderlich.jpg in Resources */,
+				2D40933D231DAA620064D4C3 /* toucan_surface.png in Resources */,
 				E29CE2AE2182A15100233A73 /* zombies.jpg in Resources */,
-				2D554674231D7C090055F487 /* toucan_surface.png in Resources */,
+				2D40933E231DAA620064D4C3 /* Reference Image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29CE2B02182A16900233A73 /* ViewController.swift in Sources */,
+				2D409335231DA9E10064D4C3 /* HomeVC.swift in Sources */,
 				2D302AFA231D796D00E4BEA1 /* LandingVC.swift in Sources */,
 				D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */,
 			);
