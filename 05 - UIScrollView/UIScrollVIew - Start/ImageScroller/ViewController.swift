@@ -29,5 +29,88 @@
 import UIKit
 
 class ViewController: UIViewController {
+  @IBOutlet weak var scrollView: UIScrollView!
+  @IBOutlet weak var imageView: UIImageView!
+  
+  override func viewDidLoad() {
+    
+    //    // Way #1 of setting contentSize for UIScrollView
+    //        scrollView.contentSize = imageView.image?.size ?? UIScreen.main.bounds.size
+    
+    scrollView.delegate = self
+    
+    // Way #2 of setting contentSize for UIScrollView
+    imageView.frame.size = imageView.image?.size ?? imageView.frame.size
+    
+    // You must set scrollView.zoomScale when you use func "viewForZooming()", otherwise you cannot drag and browse the image
+    //    scrollView.zoomScale = 1
+    
+    setZoomPara()
+    //    setZoomParameters(scrollView.bounds.size)
+  }
+  
+  func setZoomPara() {
+    let xScaleFactor = scrollView.bounds.width/imageView.bounds.width
+    let yScaleFactor = scrollView.bounds.height/imageView.bounds.height
+    
+    //    // The same as the above two lines
+    //    let xScaleFactor = scrollView.bounds.size.width/imageView.bounds.size.width
+    //    let yScaleFactor = scrollView.bounds.size.height/imageView.bounds.size.height
+    
+    
+    //    print("Before >> imageView.bounds >> \(imageView.bounds)")
+    //    print("Before >> scrollView.bounds.size >> \(scrollView.bounds)")
+    //    print ("Before >> scrollView.contentSize >> \(scrollView.contentSize)")
+    
+    let minScaleFactor = min(xScaleFactor, yScaleFactor)
+    
+    scrollView.minimumZoomScale = minScaleFactor
+    scrollView.maximumZoomScale = 3
+    scrollView.zoomScale = minScaleFactor
+    
+    
+    //    print("After >> imageView.bounds >> \(imageView.bounds)")
+    //    print("After >> scrollView.bounds >> \(scrollView.bounds)")
+    //    print ("After >> scrollView.contentSize >> \(scrollView.contentSize)")
+  }
+  
+  override func viewWillLayoutSubviews() {
+    //    print("Will layout subview")
+    //    print("Rotation ended")
+    //    print("imageView.bounds >> \(imageView.bounds)")
+    //    print("scrollView.bounds.size >> \(scrollView.bounds)")
+    //    print ("scrollView.contentSize >> \(scrollView.contentSize)")
+    
+    setZoomPara()
+    //    setZoomParameters(scrollView.bounds.size)
+    
+  }
+  
+  // Original function from CJC (CattieJesseC)
+  func setZoomParameters(_ scrollViewSize: CGSize) {
+    let imageSize = imageView.bounds.size
+    let widthScale = scrollViewSize.width / imageSize.width
+    let heightScale = scrollViewSize.height / imageSize.height
+    let minScale = min(widthScale, heightScale)
+    
+    scrollView.minimumZoomScale = minScale
+    scrollView.maximumZoomScale = 3.0
+    scrollView.zoomScale = minScale
+  }
+  
+}
 
+extension ViewController: UIScrollViewDelegate {
+  
+  func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+    return imageView
+  }
+  
+  func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
+    print("Zooming ended!")
+    //        // These two sizes will be the same
+    //        print("imageView.frame >> \(imageView.frame)")
+    //        print ("scrollView.contentSize >> \(scrollView.contentSize)")
+  }
+  
 }
