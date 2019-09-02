@@ -45,8 +45,28 @@ class ViewController: UIViewController {
     // You must set scrollView.zoomScale when you use func "viewForZooming()", otherwise you cannot drag and browse the image
     //    scrollView.zoomScale = 1
     
-    setZoomPara()
+    //    setZoomPara()
+    //    //    setZoomParameters(scrollView.bounds.size)
+    //
+    //    centerImage()
+    scrollView.minimumZoomScale = 0.05
+    scrollView.maximumZoomScale = 3.0
+    scrollView.zoomScale = 1
+    
+  }
+  
+  
+  override func viewWillLayoutSubviews() {
+    //    print("Will layout subview")
+    //    print("Rotation ended")
+    //    print("imageView.bounds >> \(imageView.bounds)")
+    //    print("scrollView.bounds.size >> \(scrollView.bounds)")
+    //    print ("scrollView.contentSize >> \(scrollView.contentSize)")
+    
+//    setZoomPara()s
     //    setZoomParameters(scrollView.bounds.size)
+    centerImage()
+    
   }
   
   func setZoomPara() {
@@ -74,17 +94,6 @@ class ViewController: UIViewController {
     //    print ("After >> scrollView.contentSize >> \(scrollView.contentSize)")
   }
   
-  override func viewWillLayoutSubviews() {
-    //    print("Will layout subview")
-    //    print("Rotation ended")
-    //    print("imageView.bounds >> \(imageView.bounds)")
-    //    print("scrollView.bounds.size >> \(scrollView.bounds)")
-    //    print ("scrollView.contentSize >> \(scrollView.contentSize)")
-    
-    setZoomPara()
-    //    setZoomParameters(scrollView.bounds.size)
-    
-  }
   
   // Original function from CJC (CattieJesseC)
   func setZoomParameters(_ scrollViewSize: CGSize) {
@@ -98,6 +107,19 @@ class ViewController: UIViewController {
     scrollView.zoomScale = minScale
   }
   
+  func centerImage() {
+
+    let yPadding: CGFloat = scrollView.bounds.height > scrollView.contentSize.height ? (scrollView.bounds.height - scrollView.contentSize.height)/2 : 0
+    let xPadding: CGFloat = scrollView.bounds.width > scrollView.contentSize.width ? (scrollView.bounds.width - scrollView.contentSize.width)/2 : 0
+    
+    if xPadding > 0 || yPadding > 0 {
+      
+      scrollView.contentInset = UIEdgeInsets(top: yPadding, left: xPadding, bottom: yPadding, right: xPadding)
+      print("scrollView.zoomScale >> \(scrollView.zoomScale)")
+      print("scrollView.contentInset >> \(scrollView.contentInset)")
+    }
+  }
+  
 }
 
 extension ViewController: UIScrollViewDelegate {
@@ -108,9 +130,16 @@ extension ViewController: UIScrollViewDelegate {
   
   func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
     print("Zooming ended!")
-    //        // These two sizes will be the same
-    //        print("imageView.frame >> \(imageView.frame)")
-    //        print ("scrollView.contentSize >> \(scrollView.contentSize)")
+    //    //        // These two sizes will be the same
+    //    print("imageView.frame >> \(imageView.frame)")
+    //    print ("scrollView.contentSize >> \(scrollView.contentSize)")
+    //
+    //    //     While bounds will be always the size of image
+    //    print("imageView.bounds >> \(imageView.bounds) ")
+    //    // These two will always be fixed to the size scrollView
+    //    print ("scrollView.bounds >> \(scrollView.bounds)")
+    //    print ("scrollView.frame >> \(scrollView.frame)")
+    centerImage()
   }
   
 }
