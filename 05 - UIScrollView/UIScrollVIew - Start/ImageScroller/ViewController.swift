@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     //    print("scrollView.bounds.size >> \(scrollView.bounds)")
     //    print ("scrollView.contentSize >> \(scrollView.contentSize)")
     
-//    setZoomPara()s
+    //    setZoomPara()s
     //    setZoomParameters(scrollView.bounds.size)
     centerImage()
     
@@ -108,7 +108,7 @@ class ViewController: UIViewController {
   }
   
   func centerImage() {
-
+    
     let yPadding: CGFloat = scrollView.bounds.height > scrollView.contentSize.height ? (scrollView.bounds.height - scrollView.contentSize.height)/2 : 0
     let xPadding: CGFloat = scrollView.bounds.width > scrollView.contentSize.width ? (scrollView.bounds.width - scrollView.contentSize.width)/2 : 0
     
