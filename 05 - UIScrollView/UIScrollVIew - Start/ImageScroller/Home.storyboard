@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="806"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kIq-4e-grS">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="799"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="827"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ray-wenderlich.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qxB-Vd-apE">
                                                 <rect key="frame" x="72.5" y="0.0" width="269" height="269"/>
@@ -36,18 +36,23 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KLl-eX-P7S">
-                                                <rect key="frame" x="0.0" y="321" width="414" height="478"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KLl-eX-P7S" customClass="JTextView" customModule="ImageScroller" customModuleProvider="target">
+                                                <rect key="frame" x="4.5" y="321" width="405" height="506"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">Ray is part of a great team - the raywenderlich.com team, a group of over 100 developers and editors from across the world. He and the rest of the team are passionate both about making apps and teaching others the techniques to make them.
+                                                <string key="text">Ray is part of a great team - the raywenderlich.com team, a group of over 100 developers and editors from across the world. He and the rest of the team are passionate both about making apps and teaching others the techniques to make them.
 
 Ray founded the software development company called Razeware which employs a variety of developers all over the world to design tutorials and even better apps.
 
 Ray has spoken at numerous conferences has even developed his own conference: RWDevCon. RWDevCon features some of the brightest developers in the iOS space in a tutorial based speaking format so that the audience not only understands the concepts, but actually gets to put it into practice.
 
-When Ray’s not programming, he’s probably playing video games, role playing games, or board games.</mutableString>
+When Ray’s not programming, he’s probably playing video games, role playing games, or board games.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="sideInset">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </textView>
                                         </subviews>
                                     </stackView>

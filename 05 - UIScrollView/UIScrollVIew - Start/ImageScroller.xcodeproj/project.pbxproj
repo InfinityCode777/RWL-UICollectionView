@@ -18,6 +18,7 @@
 		2D409340231DAA620064D4C3 /* toucan_musculature.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D40933A231DAA620064D4C3 /* toucan_musculature.png */; };
 		2D409341231DAA620064D4C3 /* toucan_skeleton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D40933B231DAA620064D4C3 /* toucan_skeleton.png */; };
 		2D409343231DAA950064D4C3 /* Vampire Toucan Description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D409342231DAA950064D4C3 /* Vampire Toucan Description.txt */; };
+		2D409346231DFE2F0064D4C3 /* JTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D409345231DFE2F0064D4C3 /* JTextView.swift */; };
 		2D482B4D231B623D00469511 /* Vampire Toucan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D482B4C231B623D00469511 /* Vampire Toucan.jpg */; };
 		5C2901831F8F6DE700803663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2901821F8F6DE700803663 /* LaunchScreen.storyboard */; };
 		D2A5F2091F4A9144005CD714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F2071F4A9144005CD714 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		2D40933A231DAA620064D4C3 /* toucan_musculature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toucan_musculature.png; sourceTree = "<group>"; };
 		2D40933B231DAA620064D4C3 /* toucan_skeleton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toucan_skeleton.png; sourceTree = "<group>"; };
 		2D409342231DAA950064D4C3 /* Vampire Toucan Description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Vampire Toucan Description.txt"; sourceTree = "<group>"; };
+		2D409345231DFE2F0064D4C3 /* JTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTextView.swift; sourceTree = "<group>"; };
 		2D482B4C231B623D00469511 /* Vampire Toucan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Vampire Toucan.jpg"; sourceTree = "<group>"; };
 		5C2901821F8F6DE700803663 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2A5F2001F4A9144005CD714 /* ImageScroller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageScroller.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D409344231DFE1D0064D4C3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2D409345231DFE2F0064D4C3 /* JTextView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		2D55466E231D7BF50055F487 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +108,7 @@
 		D2A5F2021F4A9144005CD714 /* ImageScroller */ = {
 			isa = PBXGroup;
 			children = (
+				2D409344231DFE1D0064D4C3 /* Classes */,
 				2D55466E231D7BF50055F487 /* Resources */,
 				D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */,
 				E29CE2AF2182A16900233A73 /* ViewController.swift */,
@@ -200,6 +211,7 @@
 				2D409335231DA9E10064D4C3 /* HomeVC.swift in Sources */,
 				2D302AFA231D796D00E4BEA1 /* LandingVC.swift in Sources */,
 				D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */,
+				2D409346231DFE2F0064D4C3 /* JTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
